@@ -1,0 +1,40 @@
+
+main{
+    background-color: rgb(180, 180, 180) !important;
+}
+.btn-bg{
+    background-color: rgb(250, 186, 82) !important;
+}
+.btn-outline{
+    border: 1px solid rgb(250, 186, 82) !important;
+}
+label{
+    color: rgb(85, 85, 85);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.bg-input{
+    background-color: rgb(226, 226, 226);
+}
+
+/* priority levels */
+
+.very_low{
+    color: rgb(46, 170, 242);
+}
+.low{
+    color: rgb(1, 157, 51);
+}
+.medium{
+    color: rgb(252, 212, 11);
+}
+.high{
+    color: red;
+}
+.very_high{
+    color: rgb(140, 0, 255);
+}
+#priority-legend{
+    font-size: 0.8em;
+}
