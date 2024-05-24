@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Creato il: Mag 22, 2024 alle 17:40
+-- Creato il: Mag 24, 2024 alle 10:51
 -- Versione del server: 10.4.32-MariaDB
 -- Versione PHP: 8.2.12
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `laravels6`
+-- Database: `laravelnew6`
 --
 
 -- --------------------------------------------------------
@@ -44,8 +44,8 @@ CREATE TABLE `activities` (
 --
 
 INSERT INTO `activities` (`id`, `name`, `description`, `priority`, `start_date`, `end_date`, `project_id`, `created_at`, `updated_at`) VALUES
-(1, 'costruirlo', 'prova a farlo', 'very_high', '2024-05-23', '2024-05-29', 1, '2024-05-22 13:10:45', NULL),
-(2, 'alex', 'cellulare', 'high', '2024-05-10', '2024-05-31', 2, '2024-05-22 13:40:00', NULL);
+(1, 'costruirlo', 'definirlo', 'high', '2024-05-25', '2024-05-31', 1, '2024-05-24 06:34:26', NULL),
+(2, 'sviluppo', 'essenziale', 'medium', '2024-05-17', '2024-05-11', 1, '2024-05-24 06:45:11', NULL);
 
 -- --------------------------------------------------------
 
@@ -80,12 +80,12 @@ CREATE TABLE `migrations` (
 --
 
 INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
-(1, '2014_10_12_000000_create_users_table', 1),
-(2, '2014_10_12_100000_create_password_reset_tokens_table', 1),
-(3, '2019_08_19_000000_create_failed_jobs_table', 1),
-(4, '2019_12_14_000001_create_personal_access_tokens_table', 1),
-(5, '2024_03_18_133507_create-projects-table', 1),
-(6, '2024_03_18_133728_create-activities-table', 1);
+(1, '0001_01_01_000000_create_users_table', 1),
+(2, '0001_01_01_000001_create_password_reset_tokens_table', 1),
+(3, '0001_01_01_000002_create_failed_jobs_table', 1),
+(4, '2024_05_21_131155_create_personal_access_tokens_table', 1),
+(5, '2024_05_21_133507_create-projects-table', 1),
+(6, '2024_05_21_133728_create-activities-table', 1);
 
 -- --------------------------------------------------------
 
@@ -141,8 +141,7 @@ CREATE TABLE `projects` (
 --
 
 INSERT INTO `projects` (`id`, `name`, `description`, `type`, `language`, `expiration_date`, `user_id`, `created_at`, `updated_at`) VALUES
-(1, 's23 ultra', 'Smartphone', 'fittizio', 'laravel', '2024-05-29', 1, '2024-05-22 13:10:17', NULL),
-(2, 'alex', 'Smartphone', 'fittizio', 'laravel', '2024-05-31', 2, '2024-05-22 13:39:40', '2024-05-22 13:40:14');
+(1, 's23 ultra', 'Smartphone', 'fittizio', 'laravel', '2024-05-15', 1, '2024-05-24 06:33:52', NULL);
 
 -- --------------------------------------------------------
 
@@ -166,8 +165,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'alessandro', 'alex@gmail.com', NULL, '$2y$12$zz980tdJKNs4cbm8q5KYxOQmitfBLhZggyDOvdrowVw38EnsXBlb2', NULL, '2024-05-22 12:57:25', '2024-05-22 12:57:25'),
-(2, 'alex', 'alex2@gmail.com', NULL, '$2y$12$Nm1X2knpw3AhqAcOx47arOVrt0amyAKeat7Fl77T54Lz9iWCN2Up.', NULL, '2024-05-22 13:39:22', '2024-05-22 13:39:22');
+(1, 'alex', 'alex@gmail.com', NULL, '$2y$12$KuwqT.QZUKMBI7JZspyJeO1PgLpYIxE8O5MJCndpW6FaueOWgpWhK', NULL, '2024-05-24 06:27:01', '2024-05-24 06:27:01');
 
 --
 -- Indici per le tabelle scaricate
@@ -253,13 +251,13 @@ ALTER TABLE `personal_access_tokens`
 -- AUTO_INCREMENT per la tabella `projects`
 --
 ALTER TABLE `projects`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT per la tabella `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- Limiti per le tabelle scaricate
